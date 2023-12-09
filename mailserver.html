@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Article</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+</head>
+
+<body id="wrapper">
+
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">081229275119</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">cyberdinamics@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-5 social">
+                    <ul class="social_links">
+                        <li><a href="https://web.facebook.com/profile.php?id=100009314645860" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/NLSwordZ" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/yusnan-adi-kusuma-9736231a9/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/yusnanadikusuma/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/yusnanadiK" target="_blank"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+                    <a class="navbar-brand" href="index.html">
+                        <h1>CyberBlade</h1><span>Internet Solutions</span></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="active"><a href="#articles.html">Article</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Sign In</a></li>
+                        <li><a href="registration.html">Sign Up</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--/.nav-ends -->
+    </header>
+	<body>
+
+	<center><b><p><h2>CARA KONFIGURASI MAILSERVER DI DEBIAN<br></center></b></h2>
+<font size= '4' face="calibri">
+1.	Login dengan sebagai "root" <br>
+2.	Masukan DVD 2, kemudian ketikan perintah "apt-cdrom add" <br>
+3.	Setelah selesai, Keluarkan DVD 2 dan masukan kembali DVD 1<br> 
+4.	kemudian instal aplikasi webmail dengan perintah<br>
+apt-get install postfix squirrelmail courier-imap courier-pop<br>
+<img alt="" src="img/mail/1.png"><br>
+ 
+5.Pilih Situs Internet atau Internet Site lalu Enter<br>
+<img alt="" src="img/mail/2.png"><br>
+ 
+7.	Isikan Isikan nama domail email yang akan kita buat, contoh : tkj-smkn1skh.net<br>
+ <img alt="" src="img/mail/27.png"><br>
+8.Pilih No<br>
+<img alt="" src="img/mail/4.png"><br>
+9.	Proses instalasi aplikasi selesai. Selanjutnya kita buat sebuah folder untuk penyimpanan surat dengan perintah "maildirmake /etc/skel/Maildir"<br>
+<img alt="" src="img/mail/5.png"><br>
+10.	Setelah selesai, kita edit file main.cf dengan perintah "pico /etc/postfix/main.cf"<br>
+<img alt="" src="img/mail/6.png"><br>
+11.	Kemudian tekan pgdn di keyboard sampai kursor ke akhir baris. Setelah itu tambahkan kalimat home_mailbox = Maildir/<br>
+<img alt="" src="img/mail/7.png"><br>
+12.	Simpan file main.cf , Setelah itu kita konfigurasi ulang postfix dengan perintah "dpkg-reconfigure postfix" lalu tekan Enter<br>
+<img alt="" src="img/mail/8.png"><br>
+13. Pilih Situs Internet atau Internet Site<br>
+<img alt="" src="img/mail/9.png"><br>
+14.	Isikan Isikan nama domail email yang akan kita buat, contoh : tkj-smkn1skh.net<br>
+<img alt="" src="img/mail/10.png"><br>
+15.	Penerima surel dan postmaster  kosongkan saja<br>
+<img alt="" src="img/mail/11.png"><br>
+ 
+15.	Setelah itu akan muncul seperti gambar dibawah yang otomatis terisi dengan “tkj-smkn1skh.net, debian.debian, localhost.debian, localhost” tekan Tab lalu Ok<br>
+<img alt="" src="img/mail/28.png"><br>
+
+16.	Pilih No lalu Enter<br>
+<img alt="" src="img/mail/13.png"><br>
+ 
+17.	Kemudian Masukkan angka 0.0.0.0/0 pada baris akhir<br>
+<img alt="" src="img/mail/14.png"><br>
+18.	Pilih No<br>
+<img alt="" src="img/mail/15.png"><br>
+
+19.	Biarkan “0” langsung tekan Enter<br>
+<img alt="" src="img/mail/16.png"><br>
+ 
+20.	Biarkan + Pilih Ok<br>
+<img alt="" src="img/mail/17.png"><br>
+
+21.	Pilih ipv4 lalu Ok<br>
+<img alt="" src="img/mail/18.png"><br>
+ 
+22.	Ketik perintah #nano /etc/apache2/apache2.conf
+pada baris terakhir isikan kata berikut ini<br>
+ <img alt="" src="img/mail/19.png"><br>
+
+23.	edit file konfigurasi squirrelmail
+#nano /etc/squirrelmail/apache.conf<br>
+<img alt="" src="img/mail/20.png"><br>
+Ubah menjadi spt gambar dibawah :
+Beri tanda pagar pada depan kata Alias<br>
+<img alt="" src="img/mail/21.png"><br>
+
+Setelah itu tambahkan *:80 pada < VirtualHost>  lalu hapus tanda “#” dari <VirtualHost *:80> sampai <VirtualHost> lalu save dengan menekan Ctrl + O<br>
+<img alt="" src="img/mail/22.png"><br>
+24.	lalu restart webserver<br>
+lalu restart postfix<br>
+lalu restart courier-imap<br>
+lalu restart courier-pop<br>
+<img alt="" src="img/mail/23.png"><br>
+
+25.	Kita coba pengujian di client buka webrowser anda tuliskan 
+mail.tkj-smkn1skh.net ,sebelumya pastikan client dapat nslookup tkj-smkn1skh.net melalu Command Prompt , apabila berhasil maka akan muncul seperti pada gambar dibawah<br>
+<img alt="" src="img/mail/24.png"><br>
+
+Lalu Login<br>
+<img alt="" src="img/mail/30.png"><br>
+
+26. Untuk melakukan pengujian pengiriman e-mail buat user terlebih dahulu di debian<br>
+<img alt="" src="img/mail/25.png"><br>
+
+27. Pilih "Compose" dan coba mengirim e-mail ke diri sendiri lalu send<br>
+<img alt="" src="img/mail/31.png"><br>
+
+Jika berhasil maka pesan akan masuk ke dalam menu INBOX seperti gambar dibawah<br>
+<img alt="" src="img/mail/32.png"><br>
+
+ </font>
+ </p>
+ 
+ <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr/>
+                        <p>Jl.Banmati RT 02 RW 04,Sukoharjo<br>
+			Sukoharjo<br>
+			Jawa Tengah<br></p>
+                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="features.html">Features</a></li>
+                            <li><a href="articles.html">Article</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="registration.html">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Cara Konfigurasi SIP Trunk</a>
+                                <p class="post-date">Oct 8, 2023</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Mengevaluasi Keamanan Jaringan</a>
+                                <p class="post-date">Oct 16, 2023</p>
+                            </li>
+                            <li>
+                                <a href="mailserver.html" class="post">Cara Konfigurasi Mail Server Debian 8.6</a>
+                                <p class="post-date">Oct 24, 2023</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">CyberBlade Internet Solutions</a> designed by <a href="#">SwordZ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
